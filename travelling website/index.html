@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <nav class="navbar" data-reveal>
+        <div class="nav-logo">TravelNow</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="nav-login-btn" id="openLogin">Login</button></li>
+        </ul>
+    </nav>
+    <header data-reveal>
+        <h1>Explore the World</h1>
+        <p>Your adventure starts here</p>
+    </header>
+    <main>
+        <section class="hero parallax" data-reveal>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Airplane wing over clouds">
+            <button class="cta-btn">Start Your Journey</button>
+            <div class="floating-shape shape1"></div>
+            <div class="floating-shape shape2"></div>
+        </section>
+        <section class="gallery" id="gallery" data-reveal>
+            <h2>Destinations</h2>
+            <div class="gallery-images">
+                <div class="glass-card"><img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80" alt="Beach"></div>
+                <div class="glass-card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Cliffside Village"></div>
+                <div class="glass-card"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Travel Signs"></div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials" data-reveal>
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>“The best travel experience ever! The destinations were breathtaking and the service was top-notch.”</p>
+                    <span>- Alex J.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>“I loved the easy booking process and the beautiful gallery. Will travel again!”</p>
+                    <span>- Priya S.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>“A truly creative and inspiring website. I found my dream vacation here!”</p>
+                    <span>- Marco L.</span>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact" data-reveal>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer data-reveal>
+        <p>&copy; 2024 Traveling Website. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="#" title="Instagram"><span class="social-icon">&#x1F4F7;</span></a>
+            <a href="#" title="Facebook"><span class="social-icon">&#x1F426;</span></a>
+            <a href="#" title="Twitter"><span class="social-icon">&#x1F426;</span></a>
+        </div>
+    </footer>
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <span class="close-modal" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="login-message" id="loginMessage"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
