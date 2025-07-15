@@ -17,9 +17,13 @@ Fully responsive and mobile-friendly
 
 Project Structure
 travelling website/
+
 ├── index.html        # Main website page
+
 ├── style.css         # All styles (CSS)
+
 ├── script.js         # All interactivity (JavaScript)
+
 ├── README.md         # This file
 Usage
 
